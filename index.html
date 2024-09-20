@@ -13,9 +13,27 @@
 
     <body>
         <header>
+            <svg>
+                <rect x="100" y="30" width="100" height="100" fill="Red" />
+
+                <circle cx="150" cy="80" r="50" fill="Purple" />
+
+                <circle cx="150" cy="80" r="30" fill="blue" />
+                <circle cx="150" cy="80" r="15" fill="green" />
+                <ellipse cx="150" cy="80" rx="10" ry="5" fill="purple">
+                    <animate
+                        attributeName="ry"
+                        values="50;0;50"
+                        dur="1s"
+                        repeatCount="indefinite"
+                    />
+                </ellipse>
+            </svg>
+
             <!-- Im header wird der Kopf der Webseite angegeben.
             Dies ist aber nur ein Struktur-Element. Damit der Header auch immer
             ganz oben angezeigt wird, braucht es noch das richtige CSS dafür. -->
+
             <h1>Webseite von Ainoa Mediavilla</h1>
         </header>
 
@@ -29,9 +47,7 @@
                 <li>
                     <a href="./pages/hobbies.html">Hobbies</a>
                 </li>
-            </ul>
 
-            <ul>
                 <li>
                     <a href="./pages/Schule.html">Schule</a>
                 </li>
@@ -48,15 +64,20 @@
                 Webseite vom Rest abzutrennen. Für Abschnitte in einem Text
                 verwendet man das p-Element. -->
                 <h2>Ich:</h2>
+
+                <div class="my-container">
+                    <div class="my-box">
+                        Ich heisse Ainoa Mediavilla und bin 16 Jahre alt. Ich
+                        bin in der Schweiz geboren und gehe in das Gymnasium
+                        Muttenz. Seit dem ich 5Jahre alt bin will ich Tierärtzin
+                        werden. Und deswegen ist es mein Plan nach dem Gymnasium
+                        Tiermedizien zu Studieren.
+                    </div>
+                </div>
                 <p>
                     <!-- Mit dem p-Element Teilt man einen Text in Paragraphen
                     ein. Das p-Element hat meistens nur noch Text, Links oder
                     Bilder drin, sonst keine weiteren Elemente. -->
-                    Ich heisse Ainoa Mediavilla und bin 16 Jahre alt. Ich bin in
-                    der Schweiz geboren und gehe in das Gymnasium Muttenz. Seit
-                    dem ich 5Jahre alt bin will ich Tierärtzin werden. Und
-                    deswegen ist es mein Plan nach dem Gymnasium Tiermedizien zu
-                    Studieren.
                 </p>
                 <p>
                     Ich will wenn ich älter bin gerne Reisen und so viel wie
